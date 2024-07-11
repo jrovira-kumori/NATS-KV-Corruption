@@ -1,0 +1,164 @@
+Information for Key-Value Store Bucket inconsistency created 2024-07-11T09:42:12Z
+
+Configuration:
+
+          Bucket Name: inconsistency
+         History Kept: 1
+        Values Stored: 0
+           Compressed: false
+   Backing Store Kind: JetStream
+          Bucket Size: 0 B
+  Maximum Bucket Size: unlimited
+   Maximum Value Size: unlimited
+          Maximum Age: unlimited
+     JetStream Stream: KV_inconsistency
+              Storage: File
+
+Cluster Information:
+
+                 Name: oak
+               Leader: nats-2
+              Replica: nats-0, current, seen 555µs ago
+              Replica: nats-1, current, seen 547µs ago
+[11:42:12.821195315] [KV] add key.649
+[11:42:12.965971228] [KV] add key.336
+[11:42:13.121460790] [KV] add key.227
+[11:42:13.232902306] [KV] add key.718
+[11:42:13.374794555] [KV] add key.683
+[11:42:13.500048335] [KV] add key.251
+[11:42:13.627799696] [KV] add key.418
+[11:42:13.776488338] [KV] add key.446
+[11:42:13.903059571] [KV] add key.786
+[11:42:14.169910700] [KV] add key.683 - fail
+[11:42:14.304389334] [KV] add key.411
+[11:42:14.440034148] [KV] add key.772
+[11:42:14.576582634] [KV] add key.576
+[11:42:14.704361346] [KV] add key.768
+[11:42:14.844545221] [KV] add key.185
+[11:42:14.977201296] [KV] add key.986
+[11:42:15.125158199] [KV] add key.320
+[11:42:15.256600384] [KV] rm key.814
+[11:42:15.397289293] [KV] rm key.499
+[11:42:15.557196538] [KV] rm key.192
+[11:42:15.688231280] [KV] rm key.905
+[11:42:15.826314797] [KV] rm key.66
+[11:42:16.217816608] [KV] rm key.932 - fail
+[11:42:16.285234343] [PS] kill nats-2
+[11:42:16.595835030] [KV] rm key.228 - fail
+[11:42:16.975780717] [KV] rm key.779 - fail
+[11:42:17.368661838] [KV] rm key.626 - fail
+[11:42:18.122191966] [KV] add key.707 - fail
+[11:42:18.696226801] [PS] start nats-2
+[11:42:18.698927883][SEQ] wrong last sequence count: 2
+[11:42:18.883565633] [KV] add key.670 - fail
+[11:42:19.619809260] [KV] add key.340 - fail
+[11:42:20.372953097] [KV] add key.320 - fail
+[11:42:20.757227752] [KV] rm key.786 - fail
+[11:42:21.132794751] [KV] rm key.215 - fail
+[11:42:21.526435105] [KV] rm key.298 - fail
+[11:42:21.916203977] [KV] rm key.342 - fail
+[11:42:22.304814763] [KV] rm key.460 - fail
+[11:42:22.787240068] [KV] add key.101
+[11:42:22.934391806] [KV] add key.955
+[11:42:23.060305141] [KV] add key.732
+[11:42:23.206534815] [KV] add key.929
+[11:42:23.337403639] [KV] add key.815
+[11:42:23.489051406] [KV] add key.939
+[11:42:23.633246154] [KV] add key.944
+[11:42:23.772564502] [KV] add key.835
+[11:42:23.902914064] [KV] add key.137
+[11:42:24.032672511] [KV] add key.759
+[11:42:24.160085882] [KV] add key.440
+[11:42:24.296051218] [KV] add key.580
+[11:42:24.452723413] [KV] add key.950
+[11:42:24.589389811] [KV] add key.105
+[11:42:24.735469113] [KV] add key.822
+[11:42:24.871776078] [KV] add key.224
+[11:42:25.040091461] [KV] add key.500
+[11:42:25.423701606] [KV] rm key.126 - fail
+[11:42:25.443783737] [PS] kill nats-1
+[11:42:25.571569675] [KV] rm key.136 - fail
+[11:42:25.953173888] [KV] rm key.899 - fail
+[11:42:26.094947017] [KV] rm key.490 - fail
+[11:42:26.474156131] [KV] rm key.639 - fail
+[11:42:26.869416566] [KV] rm key.411 - fail
+[11:42:27.003103522] [KV] rm key.252 - fail
+[11:42:27.788919895] [KV] add key.118 - fail
+[11:42:27.909290894] [PS] start nats-1
+[11:42:27.912000261][SEQ] wrong last sequence count: 2
+[11:42:28.549653524] [KV] add key.964 - fail
+[11:42:29.293713458] [KV] add key.431 - fail
+[11:42:30.048097273] [KV] add key.980 - fail
+[11:42:30.435730675] [KV] rm key.591 - fail
+[11:42:30.834609390] [KV] rm key.887 - fail
+[11:42:31.204380824] [KV] rm key.482 - fail
+[11:42:31.306336259] [KV] rm key.204
+[11:42:31.443101513] [KV] rm key.759
+[11:42:31.571076635] [KV] rm key.267
+[11:42:31.698774259] [KV] rm key.279
+[11:42:31.831461454] [KV] rm key.177
+[11:42:31.979191205] [KV] rm key.923
+[11:42:32.115823881] [KV] rm key.848
+[11:42:32.263768133] [KV] add key.143
+[11:42:32.415558429] [KV] add key.883
+[11:42:32.548989486] [KV] add key.91
+[11:42:32.679049528] [KV] add key.232
+[11:42:32.817623916] [KV] add key.620
+[11:42:32.950373779] [KV] add key.424
+[11:42:33.062473728] [KV] add key.928
+[11:42:33.176365861] [KV] add key.308
+[11:42:33.327233211] [KV] add key.152
+[11:42:33.478008378] [KV] add key.412
+[11:42:33.617638139] [KV] add key.222
+[11:42:33.903103119] [KV] add key.440 - fail
+[11:42:34.151835875] [KV] add key.412 - fail
+[11:42:34.303573964] [KV] add key.383
+[11:42:34.414116692] [KV] add key.501
+[11:42:34.550478991] [KV] add key.395
+[11:42:34.696893293] [KV] add key.79
+[11:42:34.830877585] [KV] add key.231
+[11:42:34.971561478] [KV] add key.384
+[11:42:35.107297226] [KV] add key.530
+[11:42:35.256498440] [KV] rm key.296
+[11:42:35.378974438] [KV] rm key.946
+[11:42:35.499128703] [KV] rm key.631
+[11:42:35.628205596] [KV] rm key.941
+[11:42:35.768139387] [KV] rm key.612
+[11:42:35.909802502] [KV] rm key.829
+[11:42:36.034338081] [KV] rm key.300
+[11:42:36.169797774] [KV] rm key.461
+[11:42:36.303324009] [KV] rm key.160
+[11:42:36.432036792] [KV] rm key.483
+[11:42:36.575221533] [KV] rm key.784
+[11:42:36.717657093] [KV] rm key.774
+[11:42:36.841180299] [KV] rm key.820
+[11:42:36.983842373] [KV] rm key.620
+[11:42:37.112268930] [KV] rm key.855
+[11:42:37.252355747] [KV] add key.574
+[11:42:37.392693253] [KV] add key.459
+[11:42:37.524761702] [KV] add key.247
+[11:42:37.664626534] [KV] add key.995
+[11:42:37.787943514] [KV] add key.770
+[11:42:37.919064572] [KV] add key.515
+[11:42:38.060202986] [KV] add key.457
+[11:42:38.172726288] [KV] add key.505
+[11:42:38.315582555] [KV] add key.743
+[11:42:38.452685180] [KV] add key.60
+[11:42:38.583960056] [KV] add key.367
+[11:42:38.732521293] [KV] add key.933
+[11:42:38.864569054] [KV] add key.856
+[11:42:39.002232959] [KV] add key.146
+[11:42:39.152026992] [KV] add key.298
+[11:42:39.632303708] [KV] add key.110 - fail
+[11:42:39.632329446] [PS] kill nats-2
+[11:42:40.164753297] [KV] add key.663 - fail
+[11:42:40.536800732] [KV] rm key.979 - fail
+[11:42:40.923284268] [KV] rm key.872 - fail
+[11:42:41.316025639] [KV] rm key.399 - fail
+[11:42:41.718685130] [KV] rm key.5 - fail
+[11:42:42.000885446] [PS] start nats-2
+[11:42:42.003686866][SEQ] wrong last sequence count: 6
+[11:42:42.004950940][SEQ] target error count observed
+[11:42:42.005845093] waiting for KV to be ready...
+[11:42:49.104788863] inconsistent results for 'docker compose exec nats-cli nats -s nats-0 kv ls inconsistency | wc -l':
+[11:42:49.105780247] 45 64
