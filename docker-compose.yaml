@@ -8,7 +8,7 @@ services:
   nats-0:
     restart: "unless-stopped"
     # image: nats:2.9.25-alpine
-    image: nats:2.10.17-alpine
+    image: ${NATS_IMAGE}
     command: -D -c /data/nats-0.conf -cluster nats://0.0.0.0:6222 -routes nats://nats-0:6222 -routes nats://nats-1:6222 -routes nats://nats-2:6222
     ports:
       - 4320:4222
@@ -33,7 +33,7 @@ services:
   nats-1:
     restart: "unless-stopped"
     # image: nats:2.9.25-alpine
-    image: nats:2.10.17-alpine
+    image: ${NATS_IMAGE}
     command: -D -c /data/nats-1.conf -cluster nats://0.0.0.0:6222 -routes nats://nats-0:6222 -routes nats://nats-1:6222 -routes nats://nats-2:6222
     ports:
       - 4321:4222
@@ -58,7 +58,7 @@ services:
   nats-2:
     restart: "unless-stopped"
     # image: nats:2.9.25-alpine
-    image: nats:2.10.17-alpine
+    image: ${NATS_IMAGE}
     command: -D -c /data/nats-2.conf -cluster nats://0.0.0.0:6222 -routes nats://nats-0:6222 -routes nats://nats-1:6222 -routes nats://nats-2:6222
     ports:
       - 4322:4222
